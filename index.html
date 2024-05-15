@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render all element normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main File Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <style></style>
+    <title>Anime List</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="" class="logo">Anime List</a>
+
+        <ul class="nav_list">
+          <li><a href="">Browse</a></li>
+          <li class="hiding_seasons_menu">
+            <a href="">Seasons</a>
+            <ul class="seasons_list">
+              <li><a href="#winter" class="seasons_list--filter">Winter</a></li>
+              <li><a href="#spring" class="seasons_list--filter">Spring</a></li>
+              <li><a href="#summer" class="seasons_list--filter">Summer</a></li>
+              <li><a href="#fall" class="seasons_list--filter">Fall</a></li>
+              <li><a href="#tba" class="seasons_list--filter">TBA</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="account">
+        <ul class="account_info">
+          <li class="search">
+            <input type="text" /> <i class="fas fa-search"></i>
+          </li>
+          <li class="user_bookmark">
+            <a href="#bookmark"><i class="far fa-bookmark"></i></a>
+          </li>
+          <li><i class="far fa-bell"></i></li>
+          <li><i class="far fa-user"></i></li>
+        </ul>
+      </div>
+    </header>
+    <div class="filter_anime--list">
+      <a href="" class="pre_season btn_lr">&lt;</a>
+      <div class="month_season-container">
+        <span class="month_period">April 2024–June 2024</span>
+        <h1 class="season_month">Spring 2024 Anime</h1>
+      </div>
+      <a href="" class="next_season btn_lr">&gt;</a>
+      <ul class="anime_type">
+        <li><a href="#tv" class="#">TV</a></li>
+        <li><a href="#movies" class="#">Movies</a></li>
+        <li><a href="#ovas" class="#">OVAs</a></li>
+        <li class="active"><a href="#all" class="#">All</a></li>
+      </ul>
+    </div>
+
+    <main class="main">
+      <div class="filter_anime--name">
+        <label for=""
+          >Sort by:
+          <select>
+            <option value="ramangi_name" selected="true">Ramangi Name</option>
+            <option value="english_name">English Name</option>
+          </select></label
+        >
+      </div>
+      <div class="main_container"></div>
+    </main>
+
+    <script type="module" src="./js/controller.js"></script>
+  </body>
+</html>

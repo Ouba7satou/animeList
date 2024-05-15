@@ -30,7 +30,7 @@ const renderAnimePage = function (dataAnime) {
 
   return `<div class="anime_info-container">
       <div class="leftside">
-        <img src="${imgCover.splice(1)}" alt="${animeName}" />
+        <img src="${imgCover.slice(1)}" alt="${animeName}" />
         <div class="rating">
           <i class="far fa-star"></i>
           <span>${Rating}</span>

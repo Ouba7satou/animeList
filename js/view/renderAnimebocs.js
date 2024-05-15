@@ -17,14 +17,6 @@ import { savedOption } from "./dataSavedinLS.js";
 export let dataLocal =
   JSON.parse(localStorage.getItem("animeList__Stored")) || [];
 
-/* dataLocal.map((da) => {
-  if (da.state) {
-    console.log(da.data);
-    console.log(da.color, da.data[0].animeName);
-    console.log(da.anime_name === da.data[0].animeName);
-  }
-}); */
-
 //Render Anime  bBase On Current Year
 export const renderAnimebaseOnCuurentYear = async function (
   year = getCurrentYear(),
@@ -109,7 +101,7 @@ export const renderAnimemarkUp = function (dataAnime, filterName) {
         <div data-state="skipping" data-color="f44336bf">Skipping</div>
       </div>
       <div class="anime">
-      <img src="${imgCover.splice(1)}" alt="${animeName}" />
+      <img src="${imgCover.slice(1)}" alt="${animeName}" />
       <div class="info">
       <div class="studio"><a href="#${Studios.split(" ").join(
         "_"
@@ -309,35 +301,4 @@ document.addEventListener("click", (e) => {
   };
 
   yari();
-  /* const anime_name = data
-    .querySelector(".anime_name")
-    .getAttribute("href")
-    .slice(1);
-  localStorage.setItem(anime_name, currentColor); */
 });
-
-/* export const checkAnimeContainers = () => {
-  const anime_containers = document.querySelectorAll(".anime_container");
-  if (anime_containers.length > 0) {
-    console.log(anime_containers);
-
-    anime_containers.forEach((container) => {
-      const anime_name = container
-        .querySelector(".anime_name")
-        .getAttribute("href")
-        .slice(1);
-      const storedColor = localStorage.getItem(anime_name);
-      if (storedColor) {
-        container.style.background = storedColor; // Apply stored color to the anime container
-        const bookmark = container.querySelector(".select_myList");
-        if (bookmark) {
-          bookmark.style.background = storedColor; // Apply stored color to the bookmark
-        }
-      }
-    });
-  } else {
-    requestAnimationFrame(checkAnimeContainers);
-  }
-};
-// Start checking for .anime_container elements
-requestAnimationFrame(checkAnimeContainers); */

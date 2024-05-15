@@ -85,7 +85,7 @@ const renderBookmarkmarkup = function (dataAnime, filterName) {
     <div data-state="skipping" data-color="f44336bf">Skipping</div>
   </div>
   <div class="anime">
-    <img src="${imgCover}" alt="${animeName}" />
+    <img src="${imgCover.splice(1)}" alt="${animeName}" />
     <div class="rating"><i class="fas fa-star"></i> ${
       Rating.split("/")[0]
     }</div>

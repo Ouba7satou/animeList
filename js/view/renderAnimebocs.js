@@ -109,7 +109,7 @@ export const renderAnimemarkUp = function (dataAnime, filterName) {
         <div data-state="skipping" data-color="f44336bf">Skipping</div>
       </div>
       <div class="anime">
-      <img src="${imgCover}" alt="${animeName}" />
+      <img src="${imgCover.splice(1)}" alt="${animeName}" />
       <div class="info">
       <div class="studio"><a href="#${Studios.split(" ").join(
         "_"

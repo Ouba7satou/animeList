@@ -51,7 +51,7 @@ const displayResult = function (result) {
 
       const resultmarkup = `<div class="resultserach anime_container" style="background: ${storedColor}"data-current-color="${storedColor}">
 <div class="anime_img">
-  <img src="${ruSear.imgCover}" alt="${ruSear.animeName}" />
+  <img src="${ruSear.imgCover.splice(1)}" alt="${ruSear.animeName}" />
 </div>
 <div class="info">
   <a href="#${ruSear.animeName.split(" ").join("_")}" class="anime_name">${

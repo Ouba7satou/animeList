@@ -100,50 +100,8 @@ const renderBookmarkmarkup = function (dataAnime, filterName) {
   </div>
   </div>`;
 };
-/* 
-` <div class="anime_container" style="background: ${animeColor}"data-current-color="${animeColor}" >
-    
-<a href="#${animeName
-    .split(" ")
-    .join("_")}" class="anime_name" >${displayedName}</a>
-<div class="anime_genres_links">
-${tagsMarkup}
-</div>
-<div class="select_myList" style="background-color: ${animeColor}"><i class="far fa-bookmark"></i></div>
-<div class="select_myList--option">
-  <div data-state="completed" data-color="03a9f4bf">Completed</div>
-  <div data-state="watching" data-color="4caf50bd">Watching</div>
-  <div data-state="planning" data-color="9153ffbd">Planning</div>
-  <div data-state="considering" data-color="ffc107bf">Considering</div>
-  <div data-state="skipping" data-color="f44336bf">Skipping</div>
-</div>
-<div class="anime">
-<img src="${imgCover}" alt="${animeName}" />
-<div class="info">
-<div class="studio"><a href="#${Studios.split(" ").join(
-    "_"
-  )}" class="filter-link studio_select">${Studios}</a></div>
-<div class="anime_date">${Aired}</div>
-<div class="source_episode">
-  <span class="source">${Source}</span>
-  <span class="episode">${Episodes} eps x ${runTime.split(" ")[0]} m</span>
-</div>
-<div class="anime_story">
-  ${story}
-</div>
-</div>
-</div>
-<div class="anime_source-links">
-<a href="#">Link1</a>
-<a href="#">Link2</a>
-<a href="#">Link3</a>
-<a href="#">Link4</a>
-<a href="#">Link5</a>
-<a href="#">Link6</a>
-</div>
-</div>`; */
 
-/* /// Remove elements with empty state directly from dataLocal
+/// Remove elements with empty state directly from dataLocal
 for (let i = dataLocal.length - 1; i >= 0; i--) {
   if (dataLocal[i].state === "") {
     dataLocal.splice(i, 1);
@@ -151,7 +109,7 @@ for (let i = dataLocal.length - 1; i >= 0; i--) {
 }
 
 // Optionally, you can update localStorage with the modified dataLocal
-localStorage.setItem("animeList__Stored", JSON.stringify(dataLocal)); */
+localStorage.setItem("animeList__Stored", JSON.stringify(dataLocal));
 
 document.addEventListener("click", async (e) => {
   const value = e.target.closest(".myList--btn")?.dataset.state;

@@ -463,6 +463,11 @@ header .account .search input:focus {
   text-align: center;
   margin-bottom: 20px;
 }
+.anime_info-container .rightside .anime_detail div span {
+  font-weight: 600;
+  margin-top: 3px;
+  display: inline-block;
+}
 .anime_info-container img {
   border-radius: 6px;
 }

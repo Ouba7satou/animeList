@@ -97,11 +97,11 @@ const renderAnimePage = function (dataAnime) {
             </div>
             <div>
               <p>Episodes</p>
-              <span>${Episodes}</span>
+              <span class="episode"><span class="watch_episode"><i class="far fa-eye"> ${Episodes}</i></span>/${Episodes}</span>
             </div>
             <div>
               <p>Run time</p>
-              <span>${runTime}m</span>
+              <span>${runTime.split(" ")[0]}m</span>
             </div>
           </div>
           <div class="story">

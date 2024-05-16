@@ -182,6 +182,7 @@ function startCountdown(targetDate) {
 }
 
 const countdownInterval = setInterval(function () {
-  document.querySelector(".broadcast--time").innerHTML =
-    startCountdown(targetDate);
+  const div = document.querySelector(".broadcast--time");
+  if (!div) return;
+  div.innerHTML = startCountdown(targetDate);
 }, 1000);

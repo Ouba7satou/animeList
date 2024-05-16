@@ -16,16 +16,18 @@ export const get_Studios = function () {
     const studios = e.target.classList.contains("all_studios");
     const filter_anime = document.querySelector(".month_season-container");
     if (!studios) return;
-    main_container.innerHTML = allStudios
+    main_container.innerHTML = `<div class="anime--Tags">${allStudios
       .map(
         (studio) =>
           `<a href="#${studio
             .split(" ")
-            .join("_")}" class="filter-link studio_select">${studio}</a>`
+            .join(
+              "_"
+            )}" class="filter-link studio_select tags_select--style">${studio}</a>`
       )
-      .join(" ");
+      .join(" ")}</div> `;
     filter_anime.innerHTML = `<div class="month_season-container">
-    <p>Studios</p>
+    <p class="anime--Tags_Name">Studios</p>
    `;
   });
 };

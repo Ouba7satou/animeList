@@ -28,7 +28,7 @@ document.addEventListener("click", async (event) => {
         filter_anime.innerHTML = `<div class="month_season-container">
           <a href="#allTags" class="all_tags">Tags ></a>
              <span class="tag">${value}</span>
-            <p>${value} Anime</p>
+            <p class="anime--Tags_Name">${value} Anime</p>
            </div>`;
         // Render filtered data
         filterTagStudio(filteredData);
@@ -38,7 +38,7 @@ document.addEventListener("click", async (event) => {
         <a href="#allStudios" class="all_studios">Studios ></a>       <span>${value}</span>
  
         <div>
-          <p>${value}</p>
+          <p class="anime--Tags_Name">${value}</p>
           <p>Founded in 2017</p>
           <span class="more_info">More info</span>
         </div>

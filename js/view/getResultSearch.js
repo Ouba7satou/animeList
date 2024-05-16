@@ -54,9 +54,9 @@ const displayResult = function (result) {
   <img src="${ruSear.imgCover.slice(1)}" alt="${ruSear.animeName}" />
 </div>
 <div class="info">
-  <a href="#${ruSear.animeName.split(" ").join("_")}" class="anime_name">${
+<div><a href="#${ruSear.animeName.split(" ").join("_")}" class="anime_name">${
         ruSear.animeName
-      }</a>
+      }</a> <span>(${ruSear.type}, ${ruSear.Episodes} eps)</span></div>
   <p>${ruSear.Aired}</p>
 </div>
 <div class="select_myList" style="background-color: ${storedColor}"><i class="far fa-bookmark"></i></div>

@@ -17,14 +17,16 @@ export const get_Tags = async function () {
     const tags = e.target.classList.contains("all_tags");
 
     if (!tags) return;
-    main_container.innerHTML = allTags
+    main_container.innerHTML = `<div class="anime--Tags">${allTags
       .map(
         (tags) =>
           `<a href="#${tags
             .split(" ")
-            .join("_")}" class="filter-link tags_select">${tags}</a>`
+            .join(
+              "_"
+            )}" class="filter-link tags_select tags_select--style">${tags}</a>`
       )
-      .join(" ");
+      .join(" ")}</div>`;
 
     newFilter_anime();
   });
@@ -33,5 +35,5 @@ const newFilter_anime = function () {
   filter_anime__name.innerHTML = ``;
   const filter_anime = document.querySelector(".month_season-container");
   filter_anime.innerHTML = `<div class="month_season-container">
-  <p>Anime Tags</p> </div>`;
+  <p class="anime--Tags_Name">Anime Tags</p> </div>`;
 };

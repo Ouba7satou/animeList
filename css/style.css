@@ -685,3 +685,9 @@ header .account .search input:focus {
   margin-bottom: 8px;
   margin-top: 8px;
 }
+.filter_anime--name label {
+  margin-left: 20px;
+}
+.logo:hover {
+  text-decoration: none;
+}

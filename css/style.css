@@ -595,6 +595,9 @@ header .account .search input:focus {
   height: fit-content;
   border: none;
 }
+.anime_bookmark .source_episode {
+  background: none;
+}
 .anime_bookmark .rating {
   position: absolute;
   bottom: 0;

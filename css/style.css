@@ -310,6 +310,8 @@ header .account .search input:focus {
 }
 .anime_container .anime img {
   object-fit: contain;
+  width: 175px;
+  height: 250px;
 }
 
 .month_season-container {
